@@ -5,7 +5,12 @@
  * - logs "Hello <name>" if there is a name
  */
 function greet(name) {
-  // Your code here
+  if (!name){
+    console.log("Hello")
+  }
+  else{
+    console.log(`Hello ${name}`)
+  }
 }
 
 /**
@@ -14,11 +19,16 @@ function greet(name) {
  * - returns true if it's odd, false otherwise
  */
 function isOdd(n) {
-  // Your code here
+  if (n%2 === 0){
+    return false
+  }
+  else {
+    return true
+  }
 }
 
 /**
- * oddsSmallerThan(n):
+ *  (n):
  * - receives a number n
  * - returns the number of ODD numbers smaller than n
  *
@@ -29,7 +39,9 @@ function isOdd(n) {
  * Hint: you can solve this without writing any loops!
  */
 function oddsSmallerThan(n) {
-  // Your code here
+  
+  let x = Math.floor(n/2);
+  return (x)
 }
 
 /**
@@ -43,8 +55,12 @@ function oddsSmallerThan(n) {
  * squareOrDouble(9) -> 81
  */
 function squareOrDouble(n) {
-  // Your code here
-}
+  if (n%2 === 0){
+    return n*2
+  }
+  else {
+    return n*n
+  }}
 
 /**
  * ageFromBirthDate(birthDate):
@@ -64,6 +80,9 @@ function squareOrDouble(n) {
  */
 function ageFromBirthDate(birthDate) {
   const _MS_PER_YEAR = 1000 * 60 * 60 * 24 * 365;
+  let x =   20200305-birthDate ;
+  return ~~(x/10000)
+
 
   // Your code here
 }
